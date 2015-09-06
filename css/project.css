@@ -145,11 +145,23 @@ table.list td:nth-child(1) span{
   color: #1e1e1e;
 }
 .footer ul li i{
-  font-size: 21pt;
+  font-size: 19pt;
 }
 
-
-
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px){
+  ul.chart li div:nth-child(1) {
+    font-size: 10pt;
+  }
+  table.list td:nth-child(2),
+  table.list td:nth-child(3),
+  table.list td:nth-child(4) {
+    font-size: 10pt;
+  }
+  .footer ul li div{
+    font-size: 10pt
+  }
+}
 
 
 
