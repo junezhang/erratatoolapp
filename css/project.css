@@ -62,7 +62,7 @@ a:hover{
   width: 100px;
 }
 ul.chart{
-  margin: 5px 0 0 0;
+  margin: 0;
   padding: 0 0 5px 0;
   border-bottom: 1px solid #ccc;
 }
@@ -87,6 +87,25 @@ ul.chart li div:nth-child(2){
   color: #1e1e1e;
   font-size: 22pt;
 }
+ul.chart li.colors{
+  height: 5px;
+  margin-bottom: 5px;
+  border-right: 1px white solid;
+}
+ul.chart li.newfiles{
+  background: #00b9e4;
+}
+ul.chart li.qe{
+  background: #92d400;
+}
+ul.chart li.relprep{
+  background: #007a87;
+}
+ul.chart li.pushready{
+  background: #f0ab00;
+}     
+
+
 .clear{
   clear: both;
 }
@@ -146,6 +165,10 @@ table.list td:nth-child(1) span{
 }
 .footer ul li i{
   font-size: 19pt;
+}
+.footer ul li.active a:link,
+.footer ul li.active a:visited{
+  color: #e0293b;
 }
 
 /* Small devices (tablets, 768px and up) */
