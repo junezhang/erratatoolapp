@@ -2,8 +2,8 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/OpenSans-Regular-webfont.eot');
-  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+  src: url('fonts/OpenSans-Regular-webfont.eot');
+  src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Regular-webfont.woff') format('woff'), url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
 }
 *{
 	  -webkit-box-sizing: border-box;
@@ -291,3 +291,61 @@ ul.comments li.comments-tt{
   padding: 0 10px;
   font-size: 18px;
 }
+
+
+
+/*Mine CSS*/
+.mine-bg{
+  background: url('../images/mine-bg.png') no-repeat;
+  background-size: cover;
+  border-bottom: solid 4px #f0ab00;
+  padding-top: 35px;
+}
+.mine-data span{
+  width: auto;
+  line-height: 18px; 
+}
+ul.list-group{
+  margin: 30px 0 0 0;
+  border-top: solid 1px #ccc;
+}
+ul.list-group li{
+  list-style: none;
+  width: 100%;
+  border-bottom: solid 1px #ccc;
+  height: 46px;
+  line-height: 46px;
+  padding-left: 20px;
+  display: block;
+  position: relative;
+}
+ul.list-group i:nth-child(1){
+  color: #ed5565;
+  margin-right: 10px;
+}
+ul.list-group li:nth-child(2) i:nth-child(1){
+  color: #a3cd75;
+}
+ul.list-group li:nth-child(3) i:nth-child(1){
+  color: #b7bbc2;
+}
+.color-approvedbyme{
+  color: #5dc9e6 !important;
+}
+.color-notification{
+  color: #5d9cec !important;
+}
+ul.list-group i:nth-child(2){
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: inline-block;
+}
+ul.list-group li a i{
+  display: inline-block;
+  float: right;
+  margin: 15px 20px 0 0; 
+}
+ul.list-group li a:link i, ul.list-group li a:visited i{
+  color: gray;
+};
