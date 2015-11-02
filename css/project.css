@@ -14,7 +14,7 @@
 }
 body{
 	font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #1e1e1e;
   padding-top: 64px;
 }
@@ -38,8 +38,8 @@ a:hover{
   color: white;
   text-align: center;
   background: #e0293b;
-  font-size: 18px;
-  padding-top: 25px;
+  font-size: 25px;
+  padding-top: 31px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -50,21 +50,21 @@ a:hover{
   background: url('../images/home-bg.png') bottom no-repeat;
   background-size: cover;
   color: #464646;
-  padding: 12px 20px;
+  padding: 20px 10px;
 }
 .summary-title{
   float: left;
-  font-size: 40px;
+  font-size: 24px;
 }
 .summary-data{
   float: right;
-  font-size: 60px;
+  font-size: 27px;
 }
 .summary-data span{
-  font-size: 24px;
-  line-height: 14px;
+  font-size: 11px;
+  line-height: 12px;
   display: inline-block;
-  width: 80px;
+  width: 60px;
 }
 ul.chart{
   margin: 0;
@@ -85,7 +85,7 @@ ul.chart li div{
 }
 ul.chart li div:nth-child(1){
   color: #aaa;
-  font-size: 18px;
+  font-size: 11px;
   margin: 10px 0 0 0;
 }
 ul.chart li div:nth-child(2){
@@ -136,7 +136,7 @@ ul.chart li.pushready{
 }
 table.list{
   width: 100%;
-  padding: 10px 20px 10px 10px;
+  padding: 10px 0px 10px 10px;
 }
 table.list td{
   vertical-align: top;
@@ -147,7 +147,6 @@ table.list td{
 table.list td:nth-child(1) span{
   font-size: 11px;
   display: inline-block;
-  max-width: 250px;
 }
 
 
@@ -164,7 +163,7 @@ table.list td:nth-child(1) span{
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e9e9e9));      /* Safari 4-5, Chrome 1-9*/
   background: -webkit-linear-gradient(top, #fff, #e9e9e9);   /*Safari5.1 Chrome 10+*/
   background: -o-linear-gradient(top, #fff, #e9e9e9);  /*Opera 11.10+*/
-  height: 60px;
+  height: 44px;
   width: 100%;
 }
 .footer ul{
@@ -184,10 +183,10 @@ table.list td:nth-child(1) span{
   color: #1e1e1e;
 }
 .footer ul li{
-  font-size: 15px;
+  font-size: 11px;
 }
 .footer ul li i{
-  font-size: 19pt;
+  font-size: 15pt;
 }
 .footer ul li.active a:link,
 .footer ul li.active a:visited{
@@ -207,8 +206,8 @@ table.list td:nth-child(1) span{
 
 .input-search{
   width: calc(90% - 36px);
-  height: 35px;
-  line-height: 35px;
+  height: 30px;
+  line-height: 30px;
   padding-left: 10px;
   border: solid 1px #fff;
 }
@@ -222,8 +221,9 @@ table.list td:nth-child(1) span{
 }
 .back{
   position: absolute;
-  left: 20px;
-  top: 40px;
+  left: 10px;
+  top: 35px;
+  font-size: 16px;
 }
 a:link i.back,a:visited i.back{
   color: white;
@@ -231,7 +231,7 @@ a:link i.back,a:visited i.back{
 
 ul.list,
 ul.comments{
-  margin:  15px 20px;
+  margin:  15px 10px;
 }
 ul.list li{
   list-style: none;
