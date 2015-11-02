@@ -206,8 +206,8 @@ table.list td:nth-child(1) span{
 
 .input-search{
   width: calc(90% - 36px);
-  height: 35px;
-  line-height: 35px;
+  height: 30px;
+  line-height: 30px;
   padding-left: 10px;
   border: solid 1px #fff;
 }
@@ -221,8 +221,9 @@ table.list td:nth-child(1) span{
 }
 .back{
   position: absolute;
-  left: 20px;
-  top: 40px;
+  left: 10px;
+  top: 35px;
+  font-size: 16px;
 }
 a:link i.back,a:visited i.back{
   color: white;
@@ -230,7 +231,7 @@ a:link i.back,a:visited i.back{
 
 ul.list,
 ul.comments{
-  margin:  15px 20px;
+  margin:  15px 10px;
 }
 ul.list li{
   list-style: none;
