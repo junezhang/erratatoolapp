@@ -8,44 +8,8 @@
 </head>
 <body>
 	<div class="header">
-		Errata Tool
-	</div>
-	<div class="summary-container">
-		<div class="summary-title">
-			Advisories 
-		</div>
-		<div class='summary-data'>
-			456 <span>Open Advisories</span>
-		</div>
-	</div>	
-	<ul class='chart'>
-		<li class='colors newfiles'></li>
-		<li class='colors qe'></li>
-		<li class='colors relprep'></li>
-		<li class='colors pushready'></li>
-		<li>
-			<div>NEW FILES</div>
-			<div>231</div>
-		</li>
-		<li>
-			<div>QE</div>
-			<div>164</div>
-		</li>
-		<li>
-			<div>REL PREP</div>
-			<div>60</div>
-		</li>
-		<li>
-			<div>PUSH READY</div>
-			<div>91</div>
-		</li>
-		<div class='clear'></div>
-	</ul>
-	<div class="list-title">
-		New Advisories List
-		<span class="list-more">
-			<a href='#'><i class="fa fa-angle-double-right"></i></a>
-		</span>
+		<input placeholder='Type to search' class='input-search'>
+		<i class="fa fa-chevron-left back"></i>
 	</div>
 	<table class='list'>
 		<tr>
@@ -57,7 +21,7 @@
 			</td>
 			<td>RHEL</td>
 			<td>RHEL-x.y.z</td>
-			<td><span>NEW FILES</span></td>
+			<td><span class='newfiles'>NEW FILES</span></td>
 		</tr>
 		<tr>
 			<td>
@@ -68,7 +32,7 @@
 			</td>
 			<td>RHEL</td>
 			<td>RHEL-x.y.z</td>
-			<td><span>NEW FILES</span></td>
+			<td><span class='qe'>QE</span></td>
 		</tr>
 		<tr>
 			<td>
@@ -79,7 +43,7 @@
 			</td>
 			<td>RHEL</td>
 			<td>RHEL-x.y.z</td>
-			<td><span>NEW FILES</span></td>
+			<td><span class='relprep'>Rel Prep</span></td>
 		</tr>
 		<tr>
 			<td>
@@ -90,7 +54,7 @@
 			</td>
 			<td>RHEL</td>
 			<td>RHEL-x.y.z</td>
-			<td><span>NEW FILES</span></td>
+			<td><span class='pushready'>Push Ready</span></td>
 		</tr>
 		<tr>
 			<td>
@@ -172,13 +136,13 @@
 	</table>
 	<div class='footer'>
 		<ul>
-			<li class='active'>
+			<li>
 				<a href="home.html">
 					<i class="fa fa-home"></i>
 					<div>Home</div>
 				</a>
 			</li>
-			<li>
+			<li class='active'>
 				<a href="list.html">
 					<i class="fa fa-list"></i>
 					<div>List</div>

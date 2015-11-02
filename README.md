@@ -1,2 +1,0 @@
-# erratatoolapp
-Errata Tool APP
