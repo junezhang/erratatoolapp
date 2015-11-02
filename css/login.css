@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+}
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
+}
+body{
+	background: #e0293b;
+	font-family: 'Open Sans', sans-serif;
+}
+.container-login{
+	width: 70%;
+	margin: 100px auto;
+}
+.login-title{
+	font-size: 36px;
+	color: white;
+	text-align: center;
+}
+.login-content{
+	margin: 150px 0 0 0;
+}
+.login-content ul li{
+	list-style: none;
+	color: #efced1;
+	height: 50px;
+	line-height: 50px;
+}
+.login-content ul li:nth-child(1){
+	border-bottom: solid 1px #e5e5e5;
+}
+.login-content ul li span{
+	display: inline-block;
+	width: calc(100% - 30px);
+	text-align: center;
+}
+.login-content ul li span input{
+	font-family: 'Open Sans', sans-serif;
+	border: none;
+	background: none;
+	color: white;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.login-button input{
+	margin: 30px 0 0 0;
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 3px;
+	background: #f2f2f2;
+	border: none;
+	font-size: 18px;
+	color: #e0293b;
+	cursor: pointer;
+}
+

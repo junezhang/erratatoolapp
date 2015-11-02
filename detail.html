@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head lang='en'>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Errata Tool Mobile APP</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/project.css">
+</head>
+<body>
+	<div class="header">
+		RHBA-2015:21575
+			<i class="fa fa-chevron-left back"></i>
+	</div>
+	<ul class="list">
+		<li>
+			<span class="list-tt">Product</span>
+			<span class="list-content">RHEL</span>
+		</li>
+		<li>
+			<span class="list-tt">Release</span>
+			<span class="list-content">x.y</span>
+		</li>
+		<li>
+			<span class="list-tt">Status</span>
+			<span class="list-content">New Files</span>
+		</li>
+		<li>
+			<span class="list-tt">Priority</span>
+			<span class="list-content">High</span>
+		</li>
+		<li>
+			<span class="list-tt">Sererity</span>
+			<span class="list-content">High</span>
+		</li>
+		<li>
+			<span class="list-tt">Type</span>
+			<span class="list-content">Bug Fix Advisory (RHBA)</span>
+		</li>
+		<li>
+			<span class="list-tt">Reporter</span>
+			<span class="list-content"><a href="mailto:junzhang@redhat.com">June Zhang</a></span>
+		</li>
+		<li>
+			<span class="list-tt">QE Owner</span>
+			<span class="list-content">
+				<a href="mailto:junzhang@redhat.com">Le Tian</a>
+				<i class="fa fa-refresh pull-right" title='Change QE Owner' id='changeqeowner'></i>
+
+			</span>
+		</li>
+		<div class='changeQEowner'>
+			<input type="text" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" data-items="4" data-provide="typeahead" style="margin: 0 auto;display:none;" class="input-xlarge" id='qeowner'>
+		</div>
+	</ul>
+	<ul class="comments">
+		<li class='comment-tt'>Comments</li>
+		<li>
+			<div class='userinfo'><i class="fa fa-user-secret"></i>June Zhang, Jul 09, 14:09, 2015</div>
+			All CSS Preprocessors do have math functions and they are pretty useful. But they aren't quite as powerful as native math. The most useful ability of calc() is its ability to mix units, like percentages and pixels. No Preprocessor will ever be able to do that. It is something that has to happen at render time.
+		</li>
+		<li>
+			<div class='userinfo'><i class="fa fa-user-secret"></i>June Zhang, Jul 09, 14:09, 2015</div>
+			All CSS Preprocessors do have math functions and they are pretty useful. But they aren't quite as powerful as native math. The most useful ability of calc() is its ability to mix units, like percentages and pixels. No Preprocessor will ever be able to do that. It is something that has to happen at render time.
+		</li>
+	</ul>
+
+	<div class='footer'>
+		<input type='text' placeholder='Leave a comment here'>
+	</div>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/typeahead.js"></script>
+	<script>
+	$(function(){
+    	$('#changeqeowner').click(function() {
+		  $('#qeowner').show();
+		})
+    });
+	</script>
+</body>
+</html>
