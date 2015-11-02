@@ -14,7 +14,7 @@
 }
 body{
 	font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #1e1e1e;
   padding-top: 64px;
 }
@@ -50,7 +50,7 @@ a:hover{
   background: url('../images/home-bg.png') bottom no-repeat;
   background-size: cover;
   color: #464646;
-  padding: 20px;
+  padding: 20px 10px;
 }
 .summary-title{
   float: left;
@@ -58,13 +58,13 @@ a:hover{
 }
 .summary-data{
   float: right;
-  font-size: 29px;
+  font-size: 27px;
 }
 .summary-data span{
   font-size: 11px;
   line-height: 12px;
   display: inline-block;
-  width: 80px;
+  width: 60px;
 }
 ul.chart{
   margin: 0;
@@ -136,7 +136,7 @@ ul.chart li.pushready{
 }
 table.list{
   width: 100%;
-  padding: 10px 20px 10px 10px;
+  padding: 10px 0px 10px 10px;
 }
 table.list td{
   vertical-align: top;
@@ -147,7 +147,6 @@ table.list td{
 table.list td:nth-child(1) span{
   font-size: 11px;
   display: inline-block;
-  max-width: 250px;
 }
 
 
