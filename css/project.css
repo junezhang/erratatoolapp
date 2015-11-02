@@ -38,8 +38,8 @@ a:hover{
   color: white;
   text-align: center;
   background: #e0293b;
-  font-size: 18px;
-  padding-top: 25px;
+  font-size: 25px;
+  padding-top: 31px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -50,19 +50,19 @@ a:hover{
   background: url('../images/home-bg.png') bottom no-repeat;
   background-size: cover;
   color: #464646;
-  padding: 12px 20px;
+  padding: 20px;
 }
 .summary-title{
   float: left;
-  font-size: 40px;
+  font-size: 24px;
 }
 .summary-data{
   float: right;
-  font-size: 60px;
+  font-size: 29px;
 }
 .summary-data span{
-  font-size: 24px;
-  line-height: 14px;
+  font-size: 11px;
+  line-height: 12px;
   display: inline-block;
   width: 80px;
 }
@@ -164,7 +164,7 @@ table.list td:nth-child(1) span{
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e9e9e9));      /* Safari 4-5, Chrome 1-9*/
   background: -webkit-linear-gradient(top, #fff, #e9e9e9);   /*Safari5.1 Chrome 10+*/
   background: -o-linear-gradient(top, #fff, #e9e9e9);  /*Opera 11.10+*/
-  height: 60px;
+  height: 48px;
   width: 100%;
 }
 .footer ul{
@@ -184,10 +184,10 @@ table.list td:nth-child(1) span{
   color: #1e1e1e;
 }
 .footer ul li{
-  font-size: 15px;
+  font-size: 11px;
 }
 .footer ul li i{
-  font-size: 19pt;
+  font-size: 15pt;
 }
 .footer ul li.active a:link,
 .footer ul li.active a:visited{
