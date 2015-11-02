@@ -85,7 +85,7 @@ ul.chart li div{
 }
 ul.chart li div:nth-child(1){
   color: #aaa;
-  font-size: 18px;
+  font-size: 11px;
   margin: 10px 0 0 0;
 }
 ul.chart li div:nth-child(2){
@@ -164,7 +164,7 @@ table.list td:nth-child(1) span{
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e9e9e9));      /* Safari 4-5, Chrome 1-9*/
   background: -webkit-linear-gradient(top, #fff, #e9e9e9);   /*Safari5.1 Chrome 10+*/
   background: -o-linear-gradient(top, #fff, #e9e9e9);  /*Opera 11.10+*/
-  height: 48px;
+  height: 44px;
   width: 100%;
 }
 .footer ul{
