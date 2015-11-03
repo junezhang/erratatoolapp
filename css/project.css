@@ -38,8 +38,8 @@ a:hover{
   color: white;
   text-align: center;
   background: #e0293b;
-  font-size: 25px;
-  padding-top: 31px;
+  font-size: 21px;
+  padding-top: 30px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -68,7 +68,7 @@ a:hover{
 }
 ul.chart{
   margin: 0;
-  padding: 0 0 5px 0;
+  padding: 0;
   border-bottom: 1px solid #ccc;
 }
 ul.chart li{
@@ -94,33 +94,31 @@ ul.chart li div:nth-child(2){
 }
 ul.chart li.colors{
   height: 5px;
-  margin-bottom: 5px;
-  border-right: 1px white solid;
 }
 ul.chart li.newfiles{
   background: #00b9e4;
 }
 .newfiles{
-  color: #00b9e4;
+  background: #00b9e4;
 }
 
 ul.chart li.qe{
   background: #92d400;
 }
 .qe{
-  color: #00b9e4;
+  background: #92d400;
 }
 ul.chart li.relprep{
   background: #007a87;
 }
 .relprep{
-  color: #007a87;
+  background: #007a87;
 }
 ul.chart li.pushready{
   background: #f0ab00;
 }     
 .pushready{
-  color: #f0ab00;
+  background: #f0ab00;
 }
 
 .clear{
@@ -128,15 +126,17 @@ ul.chart li.pushready{
 }
 .list-title{
   color: #7c7c7c;
-  padding: 10px 10px 5px 10px;
+  padding:0px 10px 5px 10px;
   border-bottom: 1px solid #ccc;
+  display: none;
 }
 .list-more{
   float: right;
 }
 table.list{
   width: 100%;
-  padding: 10px 0px 10px 10px;
+  padding: 0px 10px 40px 10px;
+  border-spacing: 0;
 }
 table.list td{
   vertical-align: top;
@@ -148,6 +148,14 @@ table.list td:nth-child(1) span{
   font-size: 11px;
   display: inline-block;
 }
+table.list td:nth-child(4){
+  text-align: right;
+}
+table.list td:nth-child(4) span{
+  color: white;
+  padding: 3px;
+  font-size: 15px;
+}
 
 
 
@@ -156,14 +164,8 @@ table.list td:nth-child(1) span{
   bottom: 0;
   left: 0;
   border-top: 1px solid #ccc;
-  background: #f3f3f3;
-  background: -ms-linear-gradient(top, #fff,  #e9e9e9);        /* IE 10 */
-  background:-moz-linear-gradient(top,#fff,#e9e9e9);/*火狐*/ 
-  background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#fff), to(#e9e9e9));/*谷歌*/ 
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e9e9e9));      /* Safari 4-5, Chrome 1-9*/
-  background: -webkit-linear-gradient(top, #fff, #e9e9e9);   /*Safari5.1 Chrome 10+*/
-  background: -o-linear-gradient(top, #fff, #e9e9e9);  /*Opera 11.10+*/
-  height: 44px;
+  background: #f7f7f7;
+  height: 49px;
   width: 100%;
 }
 .footer ul{
@@ -176,20 +178,24 @@ table.list td:nth-child(1) span{
   width: 25%;
   text-align: center;
 }
-.footer ul li a:link,.footer ul li a:visited{
-  color: #acafb6;
+.footer ul li{
+  color: #595c60;
 }
-.footer ul li a:hover{
+.footer ul li:hover{
   color: #1e1e1e;
+  cursor: pointer;
 }
 .footer ul li{
-  font-size: 11px;
+  font-size: 12px;
 }
 .footer ul li i{
-  font-size: 15pt;
+  font-size: 22px;
+  margin-bottom: 2px;
 }
-.footer ul li.active a:link,
-.footer ul li.active a:visited{
+.footer ul li div{
+  font-size: 10px;
+}
+.footer ul li.active{
   color: #e0293b;
 }
 
@@ -310,18 +316,20 @@ ul.comments li.comments-tt{
 }
 .mine-data span{
   width: auto;
-  line-height: 18px; 
+  line-height: 15px; 
+  margin-top: -10px;
 }
 ul.list-group{
   margin: 30px 0 0 0;
   border-top: solid 1px #ccc;
+  background: white;
 }
 ul.list-group li{
   list-style: none;
   width: 100%;
   border-bottom: solid 1px #ccc;
-  height: 46px;
-  line-height: 46px;
+  height: 40px;
+  line-height: 40px;
   padding-left: 20px;
   display: block;
   position: relative;
@@ -355,5 +363,8 @@ ul.list-group li a i{
 }
 ul.list-group li a:link i, ul.list-group li a:visited i{
   color: gray;
-};
+}
+.gray{
+  background: #efeff4;
+}
 
