@@ -13,14 +13,104 @@
   	padding: 0;
 }
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', Helvetica,Arial,sans-serif;
   font-size: 16px;
   color: #1e1e1e;
-  padding-top: 64px;
+  background: #efeff4;
 }
 html,body{
   height: 100%;
 }
+
+/* Login Style */
+.container-login,
+.container-start{
+  background: #e0293b url('../images/bg.png') right bottom no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.content-start{
+  width: 80%;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -40%;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+.content-start span{
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  color: white;
+}
+.start-copyright{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 300px;
+  height: 30px;
+  margin-left: -150px;
+  font-size: 11px;
+  color: #EB7581;
+}
+.content-login{
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 130px;
+}
+.login-title{
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+.login-content{
+  margin: 150px 0 0 0;
+}
+.login-content ul li{
+  list-style: none;
+  color: #efced1;
+  height: 50px;
+  line-height: 50px;
+}
+.login-content ul li:nth-child(1){
+  border-bottom: solid 1px #e5e5e5;
+}
+.login-content ul li span{
+  display: inline-block;
+  width: calc(100% - 30px);
+  text-align: center;
+}
+.login-content ul li span input{
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.login-button input{
+  margin: 30px 0 0 0;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 3px;
+  background: #f2f2f2;
+  border: none;
+  font-size: 18px;
+  color: #e0293b;
+  cursor: pointer;
+}
+
+
+
+
 a:link, a:visited{
   color: #1e1e1e;
   text-decoration: none;
@@ -39,11 +129,16 @@ a:hover{
   text-align: center;
   background: #e0293b;
   font-size: 21px;
-  padding-top: 30px;
+  padding-top: 26px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+}
+.header + div,
+.header + table,
+.header + ul{
+  margin-top: 64px !important;
 }
 .summary-container{
   height: 60px;
@@ -70,6 +165,7 @@ ul.chart{
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #ccc;
+  background: white;
 }
 ul.chart li{
   list-style: none;
@@ -98,26 +194,26 @@ ul.chart li.colors{
 ul.chart li.newfiles{
   background: #00b9e4;
 }
-.newfiles{
+.NEW_FILES{
   background: #00b9e4;
 }
 
 ul.chart li.qe{
   background: #92d400;
 }
-.qe{
+.QE{
   background: #92d400;
 }
 ul.chart li.relprep{
   background: #007a87;
 }
-.relprep{
+.REL_PREP{
   background: #007a87;
 }
 ul.chart li.pushready{
   background: #f0ab00;
 }     
-.pushready{
+.PUSH_READY{
   background: #f0ab00;
 }
 
@@ -137,6 +233,8 @@ table.list{
   width: 100%;
   padding: 0px 10px 40px 10px;
   border-spacing: 0;
+  background: white;
+  /*margin-top: 10px;*/
 }
 table.list td{
   vertical-align: top;
@@ -153,8 +251,8 @@ table.list td:nth-child(4){
 }
 table.list td:nth-child(4) span{
   color: white;
-  padding: 3px;
-  font-size: 15px;
+  padding: 3px 5px;
+  font-size: 13px;
 }
 
 
@@ -191,7 +289,23 @@ table.list td:nth-child(4) span{
 .footer ul li i{
   font-size: 22px;
   margin-bottom: 2px;
+  position: relative;
 }
+.footer ul li i div.pointer{
+    background: red;
+    width: 14px;
+    height: 14px;
+    border-radius: 8px;
+    position: absolute;
+    right: -6px;
+    top: -2px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 1px;
+  }
+
+
 .footer ul li div{
   font-size: 10px;
 }
@@ -219,6 +333,14 @@ table.list td:nth-child(4) span{
 }
 
 /* detail.html css */
+.content-list{
+  padding: 10px 0 40px;
+  background: #ffffff;
+}
+.title{
+  font-size: 19px;
+  padding-top: 4px;
+}
 .pull-left{
   float: left;;
 }
@@ -256,6 +378,8 @@ ul.list li span.list-content{
 }
 ul.comments li{
   list-style: none;
+  margin-bottom: 15px;
+  padding: 5px 10px;
 }
 ul.comments li.comments-tt{
   margin-bottom: 10px;
@@ -319,8 +443,10 @@ ul.comments li.comments-tt{
   line-height: 15px; 
   margin-top: -10px;
 }
-ul.list-group{
-  margin: 30px 0 0 0;
+ul.list-group,
+div.list-group,
+.profile-group{
+  margin: 15px 0 0 0;
   border-top: solid 1px #ccc;
   background: white;
 }
@@ -364,7 +490,106 @@ ul.list-group li a i{
 ul.list-group li a:link i, ul.list-group li a:visited i{
   color: gray;
 }
+div.list-group {
+  position: relative;
+}
+div.list-group div{
+  display: inline-block;
+}
+.avatar{
+  margin: 10px;
+}
+img.ava{
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.avatar-name{
+  margin-bottom: 10px;
+}
+.avatar-name .username{
+  font-size: 16px;
+  display: block;
+}
+.avatar-name .title{
+  font-size: 12px;
+  display: block;
+}
+div.list-group .fa-angle-right,
+.profile-group .fa-angle-right{
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  display: inline-block;
+}
+
+.profile-group div{
+  display: inline-block;
+  padding-top: 10px;
+}
+.profile-name{
+  width: 59%;
+  padding: 10px;
+
+}
+.profile-vaule{
+  width: 40%;
+  text-align: right;
+  position: relative;
+  padding-right: 50px;
+}
+
+.buttons{
+  margin: 100px 0;
+  text-align: center;
+}
+.buttons button{
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 3px;
+  background: #e0293b;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  width: 80%;
+}
+
+
 .gray{
   background: #efeff4;
 }
-
+@keyframes rotation {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(359deg);
+}
+}
+.loading{
+    animation: 0.6s linear 0s normal none infinite running rotation;
+    border-color: rgba(0, 0, 0, 0.75) rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 5px;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+}
+.container-loading{
+    background: #f1f1f1 none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+ 

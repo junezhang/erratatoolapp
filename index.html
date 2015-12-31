@@ -6,8 +6,44 @@
 	<title>Errata Tool Mobile APP</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/project.css">
+
 </head>
 <body>
+	
+<!-- login start -->
+	<div class='container-login' id="login_page">
+	<div class="content-login">
+		<div class="login-title">
+			Errata Tool
+		</div>
+		<form>
+		<div class="login-content">
+			<ul>
+				<li>
+					<i class="fa fa-user"></i>
+					<span>
+						<input placeholder='Kerberos Name...' id="loginID"> 
+					</span>
+				</li>
+				<li>
+					<i class="fa fa-lock"></i>
+					<span>
+						<input placeholder='Password...'>
+					</span>
+				</li>
+			</ul>
+			<div class="login-button">
+				<input type='button' value='Sign In' id="signin">
+			</div>	
+		</div>
+		</form>
+	</div>
+	</div>
+	
+<!-- login end -->
+	
+<!-- home start-->	
+<div id="home_page">
 	<div class="header">
 		Errata Tool
 	</div>
@@ -16,7 +52,7 @@
 			Advisories 
 		</div>
 		<div class='summary-data'>
-			456 <span>Open Advisories</span>
+			<font id="total"></font> <span>Open Advisories</span>
 		</div>
 	</div>	
 	<ul class='chart'>
@@ -26,19 +62,19 @@
 		<li class='colors pushready'></li>
 		<li>
 			<div>NEW FILES</div>
-			<div>231</div>
+			<div id="NEW_FILES"></div>
 		</li>
 		<li>
 			<div>QE</div>
-			<div>164</div>
+			<div id="QE"></div>
 		</li>
 		<li>
 			<div>REL PREP</div>
-			<div>60</div>
+			<div id="REL_PREP"></div>
 		</li>
 		<li>
 			<div>PUSH READY</div>
-			<div>91</div>
+			<div id="PUSH_READY"></div>
 		</li>
 		<div class='clear'></div>
 	</ul>
@@ -48,160 +84,166 @@
 			<a href='#'><i class="fa fa-angle-double-right"></i></a>
 		</span>
 	</div>
-	<table class='list' cellspacing='0' cellpadding='0'>
-		<tr>
-			<td>
-				<a href='detail.html'>RHBA-2015:21575
-				<br>
-				<span>firefox bug fix and enhancement update </span>
-				</a>
-			</td>
-			<td>RHEL</td>
-			<td>RHEL-x.y.z</td>
-			<td><span class='newfiles'>NEW FILES</span></td>
-		</tr>
-		<tr>
-			<td>
-				<a href='detail.html'>RHBA-2015:21575
-				<br>
-				<span>firefox bug fix and enhancement update </span>
-				</a>
-			</td>
-			<td>RHEL</td>
-			<td>RHEL-x.y.z</td>
-			<td><span class='qe'>QE</span></td>
-		</tr>
-		<tr>
-			<td>
-				<a href='detail.html'>RHBA-2015:21575
-				<br>
-				<span>firefox bug fix and enhancement update </span>
-				</a>
-			</td>
-			<td>RHEL</td>
-			<td>RHEL-x.y.z</td>
-			<td><span class='relprep'>Rel Prep</span></td>
-		</tr>
-		<tr>
-			<td>
-				<a href='detail.html'>RHBA-2015:21575
-				<br>
-				<span>firefox bug fix and enhancement update </span>
-				</a>
-			</td>
-			<td>RHEL</td>
-			<td>RHEL-x.y.z</td>
-			<td><span class='pushready'>Push Ready</span></td>
-		</tr>
-		<tr>
-			<td>
-				<a href='detail.html'>RHBA-2015:21575
-				<br>
-				<span>firefox bug fix and enhancement update </span>
-				</a>
-			</td>
-			<td>RHEL</td>
-			<td>RHEL-x.y.z</td>
-			<td><span>NEW FILES</span></td>
-		</tr>
-		<tr>
-			<td>
-				<a href='detail.html'>RHBA-2015:21575
-				<br>
-				<span>firefox bug fix and enhancement update </span>
-				</a>
-			</td>
-			<td>RHEL</td>
-			<td>RHEL-x.y.z</td>
-			<td><span>NEW FILES</span></td>
-		</tr>
-		<tr>
-			<td>
-				<a href='detail.html'>RHBA-2015:21575
-				<br>
-				<span>firefox bug fix and enhancement update </span>
-				</a>
-			</td>
-			<td>RHEL</td>
-			<td>RHEL-x.y.z</td>
-			<td><span>NEW FILES</span></td>
-		</tr>
-		<tr>
-			<td>
-				<a href='detail.html'>RHBA-2015:21575
-				<br>
-				<span>firefox bug fix and enhancement update </span>
-				</a>
-			</td>
-			<td>RHEL</td>
-			<td>RHEL-x.y.z</td>
-			<td><span>NEW FILES</span></td>
-		</tr>
-		<tr>
-			<td>
-				<a href='detail.html'>RHBA-2015:21575
-				<br>
-				<span>firefox bug fix and enhancement update </span>
-				</a>
-			</td>
-			<td>RHEL</td>
-			<td>RHEL-x.y.z</td>
-			<td><span>NEW FILES</span></td>
-		</tr>
-		<tr>
-			<td>
-				<a href='detail.html'>RHBA-2015:21575
-				<br>
-				<span>firefox bug fix and enhancement update </span>
-				</a>
-			</td>
-			<td>RHEL</td>
-			<td>RHEL-x.y.z</td>
-			<td><span>NEW FILES</span></td>
-		</tr>
-		<tr>
-			<td>
-				<a href='detail.html'>RHBA-2015:21575
-				<br>
-				<span>firefox bug fix and enhancement update </span>
-				</a>
-			</td>
-			<td>RHEL</td>
-			<td>RHEL-x.y.z</td>
-			<td><span>NEW FILES</span></td>
-		</tr>
+	<table class='list' id="home_adv_list">
+		
 	</table>
-	<div class='footer'>
+</div>
+<!-- home end-->	
+
+<!-- list start-->
+<div id="list_page">
+	<div class="header">
+		<input placeholder='Type to search' class='input-search'>
+		<i class="fa fa-chevron-left back"></i>
+	</div>
+	<table class='list' id="list_adv_list">
+	</table>	
+</div>
+<!-- list end-->
+
+<!-- chart start-->
+<div id="chart_page">
+	<div class="header">
+		Errata Chart
+	</div>
+	<div id="container" style="min-width: 400px; height: 350px;"></div>
+</div>
+<!-- chart end-->
+
+<!-- my end-->
+<div id="my_page">
+	<div class="header">
+		Errata Tool
+	</div>
+		<div class="summary-container mine-bg">
+			<div class="summary-title">
+				Ami Jeain 
+			</div>
+			<div class='summary-data mine-data'>
+				<span>Supervisor, Quality Engineering<br>
+	EMEA.ENG QE Virtualization </span>
+			</div>
+		</div>
+		<ul class="list-group">
+			<li>
+				<i class="fa fa-flag-checkered"></i>
+				<span>Reporter is me</span>
+				<a href='#'><i class="fa fa-angle-right"></i></a>
+			</li>
+			<li>
+				<i class="fa fa-flask"></i>
+				<span>QE Owner is me</span>
+				<a href='#'><i class="fa fa-angle-right"></i></a>
+			</li>
+			<li>
+				<i class="fa fa-eye"></i>
+				<span>Doc Reviewer is me</span>
+				<a href='#'><i class="fa fa-angle-right"></i></a>
+			</li>
+		</ul>
+
+		<ul class="list-group">
+			<li>
+				<i class="fa fa-pencil-square-o color-approvedbyme"></i>
+				<span>Need My Approval</span>
+				<a href='#'><i class="fa fa-angle-right"></i></a>
+			</li>
+		</ul>
+
+		<ul class="list-group">
+			<li>
+				<i class="fa fa-envelope color-notification"></i>
+				<span>Notification</span>
+				<a href='#'><i class="fa fa-angle-right"></i></a>
+			</li>
+		</ul>
+</div>
+<!-- my end-->
+
+<!-- detail start-->
+<div id="detail_page">
+	<div class="header" id="header">
+		<div class="title"></div>
+		<i class="fa fa-chevron-left back"></i>
+	</div>
+	<div class='content-list'>
+	<ul class="list">
+		<li>
+			<span class="list-tt">Product</span>
+			<span class="list-content" id="d_Product"></span>
+		</li>
+		<li>
+			<span class="list-tt">Created</span>
+			<span class="list-content" id="d_Created"></span>
+		</li>
+		<li>
+			<span class="list-tt">Status</span>
+			<span class="list-content" id="d_Status"></span>
+		</li>
+		<li>
+			<span class="list-tt">Priority</span>
+			<span class="list-content" id="d_Priority"></span>
+		</li>
+		<li>
+			<span class="list-tt">Sererity</span>
+			<span class="list-content" id="d_Sererity"></span>
+		</li>
+		<li>
+			<span class="list-tt">Type</span>
+			<span class="list-content" id="d_Type"></span>
+		</li>
+		<li>
+			<span class="list-tt">Reporter</span>
+			<span class="list-content"><a href="mailto:junzhang@redhat.com" id="d_Reporter"></a></span>
+		</li>
+		<li>
+			<span class="list-tt">QE Owner</span>
+			<span class="list-content">
+				<a href="mailto:junzhang@redhat.com" id="d_QAowner"></a>
+				<i class="fa fa-refresh pull-right" title='Change QE Owner' id='changeqeowner'></i>
+
+			</span>
+		</li>
+		<div class='changeQEowner'>
+			<input type="text" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Connecticut&quot;,&quot;Delaware&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" data-items="4" data-provide="typeahead" style="margin: 0 auto;display:none;" class="input-xlarge" id='qeowner'>
+		</div>
+	</ul>
+</div>
+</div>
+<!-- detail end-->
+
+
+	<div class='footer' id="footer">
 		<ul>
-			<li class='active'>
-				<a href="home.html">
-					<i class="fa fa-home"></i>
-					<div>Home</div>
-				</a>
+			<li class='active' id="footer_home">
+				<i class="fa fa-home"></i>
+				<div>Home</div>
 			</li>
-			<li>
-				<a href="list.html">
-					<i class="fa fa-list"></i>
-					<div>List</div>
-				</a>
+			<li id="footer_list">
+				<i class="fa fa-list"></i>
+				<div>List</div>
 			</li>
-			<li>
-				<a href="http://www.baidu.com">
-					<i class="fa fa-bar-chart"></i>
-					<div>Chart</div>
-				</a>
+			<li id="footer_chart">
+				<i class="fa fa-bar-chart"></i>
+				<div>Chart</div>
 			</li>
-			<li>
-				<a href="mine.html">
-					<i class="fa fa-user"></i>
-					<div>Mine</div>
-				</a>
+			<li id="footer_my">
+				<i class="fa fa-user">
+					<div class='pointer'>20</div>
+				</i>
+				<div>Mine
+
+				</div>
 			</li>
 		</ul>
 	</div>
 </body>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/highcharts.js"></script>
+<script type="text/javascript" src="js/ds-client.js"></script>
+<script type="text/javascript" src="js/ds-util.js"></script>
+<script type="text/javascript" src="js/ds-messages.js"></script>
 <script type="text/javascript" src="js/errata.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </html>

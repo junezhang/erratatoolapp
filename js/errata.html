@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <script src="jquery-1.7.2.js"></script>
+  <script src="highcharts.js"></script>
+  <script src="ds-client.js"></script>
+  <script src="ds-util.js"></script>
+  <script src="ds-messages.js"></script>
+  <div id="container" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+  <script type="text/javascript">
+    var client = new DsClient({reportdiv:'container'});
+    client.callAPI('http://10.66.141.235:8080/dataservice/api/errata/trend?product=Red Hat Enterprise Linux&status=[NEW_FILES,QE,REL_PREP,PUSH_READY]&date=[interval:monthly]&is_brew=ALL',
+    	    {"title":"Red Hat Enterprise Linux","subtitle":"Advistories Monthly Report"})
+  </script>
+</html>
